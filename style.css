@@ -305,7 +305,7 @@ background-color: blue;
     opacity: 1;
   }
   100% {
-    transform: translateY(40%);
+    transform: translateY(30%);
     opacity: 1;
   }
 }
@@ -318,7 +318,7 @@ background-color: blue;
     opacity: 1;
   }
   100% {
-    transform: translateY(-40%);
+    transform: translateY(-30%);
     opacity: 1;
   }
 }
