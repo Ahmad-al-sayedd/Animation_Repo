@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -11,13 +10,230 @@ body {
   height: 100vh;
 }
 .container {
+  width: 70%;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  height: 100%;
-  width: 70%;
 }
+main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  overflow: hidden;
+}
+.Main_Article {
+  width: 40%;
+  height: 350px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.Main_Article img {
+  width: 45%;
+  height: 200px;
+  background-color: transparent;
+}
+.Main_Article_space1 {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 40%;
+  border-top-left-radius: 100%;
+}
+.Main_Article_space2 {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 40%;
+  border-top-right-radius: 100%;
+}
+.Main_Article_space3 {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 40%;
+  border-bottom-left-radius: 100%;
+}
+.Main_Article_space4 {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 40%;
+  border-bottom-right-radius: 100%;
+}
+.Main_SparkasseLoge {
+  width: 42%;
+  height: 45%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  position: absolute;
+  overflow: hidden;
+  animation-name: sparkasse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+opacity: 0;}
+
+@keyframes sparkasse {
+    0% {
+    
+    }
+    100%{
+  opacity: 1;
+
+    }
+}
+.Main_SparkasseLoge img {
+  width: 42%;
+  height: 70%;
+  border-radius: 50%;
+}
+.article1 {
+  background: rgb(248, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 253, 255, 1) 19%,
+    rgba(233, 236, 237, 1) 32%,
+    rgba(133, 127, 127, 1) 100%
+  );
+
+  opacity: 0;
+  transform: translateX(-150%);
+  animation-name: article1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+  animation-delay:1s ;
+}
+@keyframes article1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+
+    background-color: rgb(248, 253, 255);
+    
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+.article2 {
+  background: rgb(255, 247, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 195, 1) 16%,
+    rgba(233, 236, 237, 1) 99%,
+    rgba(187, 185, 175, 1) 100%
+
+  );
+  opacity: 0;
+  transform: translateX(100%);
+animation-name: article2;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-delay:2.5s ;
+}
+@keyframes article2 {
+    0% {
+      background-color: rgb(248, 253, 255);
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+
+.article3 {
+  background: rgb(255, 240, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 240, 233, 1) 16%,
+    rgba(223, 163, 143, 1) 100%
+  );
+  opacity: 0;
+  transform: translateX(-100%);
+  animation-name:article3; ;
+  animation-duration: 3s;
+animation-fill-mode: forwards;
+  animation-delay:3.5s ;
+}
+@keyframes article3 {
+    0% {
+        background-color: rgb(248, 253, 255);
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+  }
+  
+.article4 {
+  background: rgb(248, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 253, 255, 1) 19%,
+    rgba(233, 236, 237, 1) 32%,
+    rgba(133, 127, 127, 1) 100%
+  );
+  animation-name:article4; ;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+animation-delay:4s ;
+opacity: 0;
+transform: translateX(100%);
+}
+@keyframes article4 {
+    0% {
+      background-color: rgb(248, 253, 255);
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+
+
+
 header,
 footer {
   width: 100%;
