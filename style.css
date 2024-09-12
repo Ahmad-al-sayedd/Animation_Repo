@@ -234,12 +234,12 @@ transform: translateX(100%);
 
 
 
-header,
-footer {
-  width: 100%;
+header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+background-color: blue;
 }
 
 .header-box,
@@ -286,6 +286,7 @@ footer {
   position: fixed;
   top: 0;
   animation: header 2s ease forwards;
+  width: 50%;
 }
 .footer-box {
   opacity: 0;
@@ -304,7 +305,7 @@ footer {
     opacity: 1;
   }
   100% {
-    transform: translateY(40vh);
+    transform: translateY(40%);
     opacity: 1;
   }
 }
@@ -317,7 +318,7 @@ footer {
     opacity: 1;
   }
   100% {
-    transform: translateY(-40vh);
+    transform: translateY(-40%);
     opacity: 1;
   }
 }
